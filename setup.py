@@ -17,7 +17,7 @@ else:
 
 
 setup(
-    name='Embedly',
+    name='embedly2',
     version=get_version(),
     author='Jelle Zijlstra',
     author_email='jelle.zijlstra@gmail.com',
