@@ -1,9 +1,8 @@
 
-from .py3_utils import python_2_unicode_compatible, IterableUserDict
+from collections import UserDict
 
 
-@python_2_unicode_compatible
-class Url(IterableUserDict, object):
+class Url(UserDict):
     """
     A dictionary with two additional attributes for the method and url.
     UserDict provides a dictionary interface along with the regular
@@ -11,7 +10,7 @@ class Url(IterableUserDict, object):
 
     """
     def __init__(self, data=None, method=None, original_url=None, **kwargs):
-        super(Url, self).__init__(data, **kwargs)
+        super().__init__(data, **kwargs)
         self.method = method or 'url'
         self.original_url = original_url
 
