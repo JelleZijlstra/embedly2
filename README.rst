@@ -183,6 +183,14 @@ an error. For example if we use an invalid key, we will get a 401 response back
   >>> obj['error_code']
   401
 
+Changelog
+---------
+
+Version 0.6.0 (May 25, 2022)
+- Declare support for Python 3.6 through 3.10; drop support for Python 2,
+  3.2, and 3.3.
+- Fix installation with recent versions of setuptools.
+
 Copyright
 ---------
 Copyright (c) 2013 Embed.ly, Inc. See LICENSE for details.
