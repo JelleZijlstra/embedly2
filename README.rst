@@ -107,20 +107,22 @@ developer to only pass a subset of Embedly `providers
 not supported through these regexes.
 
 ``regex``
+
   If you would like to only send URLs that returns embed HTML via Embedly you
   can match the URL to the regex before making the call. The matching providers
   are listed at `embed.ly/providers <http://embed.ly/providers>`_::
 
-  >>> url = 'http://vimeo.com/18150336'
-  >>> client.regex.match(url)
-  <_sre.SRE_Match at 0x1017ba718>
+    >>> url = 'http://vimeo.com/18150336'
+    >>> client.regex.match(url)
+    <_sre.SRE_Match at 0x1017ba718>
 
 ``is_supported``
+
   This is a simplified version of ``regex``::
 
-  >>> url = 'http://vimeo.com/18150336'
-  >>> client.is_supported(url)
-  True
+    >>> url = 'http://vimeo.com/18150336'
+    >>> client.is_supported(url)
+    True
 
 Url Object
 """"""""""
@@ -187,6 +189,7 @@ Changelog
 ---------
 
 Version 0.6.0 (May 25, 2022)
+
 - Declare support for Python 3.6 through 3.10; drop support for Python 2,
   3.2, and 3.3.
 - Fix installation with recent versions of setuptools.

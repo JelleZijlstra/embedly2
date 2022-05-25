@@ -23,6 +23,7 @@ setup(
     author_email='jelle.zijlstra@gmail.com',
     description='Python Library for Embedly',
     long_description=long_description,
+    long_description_content_type="text/x-rst",
     license="""
     Copyright (c) 2011, Embed.ly, Inc.
     All rights reserved.  Released under the 3-clause BSD license.
