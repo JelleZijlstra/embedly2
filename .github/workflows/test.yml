@@ -1,4 +1,4 @@
-name: typeshed-client
+name: embedly2
 
 on:
   - push
