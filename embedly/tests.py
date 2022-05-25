@@ -1,4 +1,4 @@
-from __future__ import unicode_literals
+
 import re
 import sys
 import json
@@ -43,20 +43,20 @@ class UrlTestCase(unittest.TestCase):
         obj = Url(data, 'preview', 'http://original.url.com/')
 
         self.assertEqual(len(obj), 16)
-        self.assertEqual(len(obj.values()), 16)
-        self.assertEqual(len(obj.keys()), 16)
-        self.assertEqual(len(obj.items()), 16)
+        self.assertEqual(len(list(obj.values())), 16)
+        self.assertEqual(len(list(obj.keys())), 16)
+        self.assertEqual(len(list(obj.items())), 16)
 
         # check for expected data
-        self.assertTrue('type' in obj.keys())
-        self.assertTrue('html' in obj.values())
+        self.assertTrue('type' in list(obj.keys()))
+        self.assertTrue('html' in list(obj.values()))
         self.assertEqual(obj['type'], 'html')
         self.assertEqual(obj.get('type'), 'html')
         self.assertEqual(obj.data['type'], 'html')
         self.assertEqual(obj.data.get('type'), 'html')
 
         # our special attrs shouldn't be in the data dict
-        self.assertFalse('method' in obj.keys())
+        self.assertFalse('method' in list(obj.keys()))
         with self.assertRaises(KeyError):
             obj['method']
 
