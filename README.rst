@@ -1,27 +1,23 @@
-embedly-python
-==============
+embedly2
+========
+
+This is a fork of the unmaintained
+`embedly-python <https://github.com/embedly/embedly-python>`_
+library. It aims to keep the package installable and functional
+on new versions of Python.
+
+The original README follows:
+
 Python library for interacting with Embedly's API. To get started sign up for
 a key at `embed.ly/signup <https://app.embed.ly/signup>`_.
 
 Install
 -------
-Install with `Pip <http://www.pip-installer.org>`_ (recommended)::
+Install with `Pip <http://www.pip-installer.org>`_::
 
-  pip install embedly
+  pip install embedly2
 
-Or easy_install::
-
-  easy_install Embedly
-
-Or setuptools::
-
-  git clone git://github.com/embedly/embedly-python.git
-  python setup.py
-
-Setup requires Setuptools 0.7+ or Distribute 0.6.2+ in order to take advantage
-of the ``2to3`` option. Setup will still run on earlier versions but you'll
-see a warning and ``2to3`` won't happen. Read more in the Setuptools
-`docs <http://pythonhosted.org/setuptools/python3.html>`_
+This library supports Python 3.6 through 3.10.
 
 Getting Started
 ---------------
